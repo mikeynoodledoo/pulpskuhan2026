@@ -15,13 +15,13 @@ import {
 export default function Home() {
   return (
     <div className="relative px-6 flex flex-col flex-1 items-center justify-center ">
-      <main className="flex w-full max-w-3xl flex-col items-center justify-between  sm:items-start">
+      <main className="flex flex-col w-full max-w-3xl flex-col items-center justify-between  sm:items-start">
         <div id="image-top" className="w-full grid place-items-center ">
-          <Image src="/Party_Title_2.png" alt="party-title.png" width={600} height={450} className="w-full h-auto" />
+          <Image src="/Party_Title_2.png" alt="party-title.png" width={1000} height={1000} className="w-2/3 h-auto" />
         </div>
-        <div className="w-full  bg-white rounded-md shadow-md my-4">
-          <form className="w-full ">
-            <div className="border-3 border-white rounded-2xl bg-white w-full items-center justify-between p-5 text-black text-center">
+        <div id="form-container" className="self-center flex flex-col bg-white ring-5 ring-gray-500/40 rounded-l my-4">
+          <form className="">
+            <div className="w-full items-center justify-between p-5 text-black text-center">
               <h1 className="text-xl font-bold "> PULPSKUHAN 2026 SECRET SANTA</h1>
               <p className="text-xs">Enter your email to unwrap the surprise and meet your Christmas Baby!</p>
               <input id="emailInput" className="w-full rounded-sm border-1  text-center mt-5 bg-gray-200 p-2" placeholder="Enter your email here"/>
@@ -35,7 +35,7 @@ export default function Home() {
                 <DialogHeader>
                   <DialogTitle>Resend Email</DialogTitle>
                 </DialogHeader>
-                <form className="flex flex-col gap-4 w-full ">
+                <form className="flex flex-col w-full ">
                   <input className="bg-gray" placeholder="Enter email here"></input>                 
                   <Button type="submit">Resend Email</Button>
                 </form>
