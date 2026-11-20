@@ -30,7 +30,9 @@ export default function Home() {
           </form>
           <div className="flex w-full items-center justify-center">
             <Dialog>
-              <DialogTrigger className="text-center text-black p-1 text-[11px] mb-2 border-b border-black">Resend Email?</DialogTrigger>
+              <DialogTrigger render={<button className="text-center text-black p-1 text-[15px] mb-2 border-b border-black" />}>
+                Resend Email?
+              </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>Resend Email</DialogTitle>
